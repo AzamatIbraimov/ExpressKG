@@ -1,7 +1,8 @@
 # EXPRESSKG 
-<p align="center">
-  <img src="https://sun9-68.userapi.com/c855732/v855732846/181cb1/Q6Op7B0l4sg.jpg" width="350" title="hover text">
-</p>
+ <a href="https://azamatibraimov.github.io/WebFinalProject/">
+         <img alt="Qries" src="https://sun9-68.userapi.com/c855732/v855732846/181cb1/Q6Op7B0l4sg.jpg"
+         width=400" height="400">
+      </a>
 
 ## CS-203 Final project
 
