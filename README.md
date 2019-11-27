@@ -1,4 +1,7 @@
-# EXPRESSKG ![alt text](https://sun9-68.userapi.com/c855732/v855732846/181cb1/Q6Op7B0l4sg.jpg)
+# EXPRESSKG 
+<p align="center">
+  <img src="https://sun9-68.userapi.com/c855732/v855732846/181cb1/Q6Op7B0l4sg.jpg" width="350" title="hover text">
+</p>
 ### CS-203 Final project
 
 
@@ -11,4 +14,4 @@
 ### Web project has a purpose and its audience (10 pts max) - DONE!
 ### Web site should have (20 pts max): navigation and footer 5 pages at least one page with form modal form with disclaimer -DONE!
 
-#Screenshots:
+# Screenshots:
