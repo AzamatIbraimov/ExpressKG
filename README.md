@@ -1,11 +1,10 @@
 # EXPRESSKG
 
-<div style="text-align: center; width: 100%;">
  <a href="https://azamatibraimov.github.io/ExpressKG/">
          <img alt="Qries" src="https://sun9-68.userapi.com/c855732/v855732846/181cb1/Q6Op7B0l4sg.jpg"
-         width=400" height="400">
+         width=500" height="500">
  </a>
-</div>
+
 
 
 
