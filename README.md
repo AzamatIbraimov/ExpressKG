@@ -1,4 +1,4 @@
-# EXPRESSKG
+# EXPRESSKG ![alt text](https://sun9-68.userapi.com/c855732/v855732846/181cb1/Q6Op7B0l4sg.jpg)
 ### CS-203 Final project
 
 
