@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ExpressKG</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://sun9-68.userapi.com/c855732/v855732846/181cb1/Q6Op7B0l4sg.jpg" />
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="https://sun9-68.userapi.com/c855732/v855732846/181cb1/Q6Op7B0l4sg.jpg" />
+    <link rel="shortcut icon" href="https://sun9-68.userapi.com/c855732/v855732846/181cb1/Q6Op7B0l4sg.jpg" />
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <img src="https://sun9-68.userapi.com/c855732/v855732846/181cb1/Q6Op7B0l4sg.jpg" class="img-fluid">
+            <a class="navbar-brand" href="index.html">ExpressKG</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="team.html">Team</a></li>
+                <li><a href="prices.html">Prices</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<body>
+
+<div>
+    <h1 class="mb-5 text-center">LATEST NEWS:</h1>
+    <div class="container">
+        <div id="container1" class="row">
+            <p>Loading</p>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h4>Location</h4>
+                <p>
+                    Manas st. 9/10<br/>
+                    +(996) 550 321 550 <br/>
+                    Bishek, Kyrgyzstan.
+                </p>
+            </div>
+
+            <div class="col-lg-4">
+                <h4>Links</h4>
+                <p>
+                    <a href="https://vk.com/azibroo">VK</a><br/>
+                    <a href="https://twitter.com/adam_d_maguire">Twitter</a><br/>
+                    <a href="https://github.com/AzamatIbraimov">GITHUB</a>
+                </p>
+            </div>
+
+            <div class="col-lg-4">
+                <h4>About</h4>
+                <p>USA parcel delivery!</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script>
+    fetch("https://neobismasterblog.herokuapp.com/news/all")
+        .then(json => json.json())
+        .then(json => {
+            console.log(json);
+            const el = document.getElementById('container1');
+            const news = [];
+            json.map(item => {
+                news.push(`
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <p><bd>${item.date}</bd></p>
+                         <h4>${item.title}</h4>
+                          <img src ="${item.image}" width="1" height="1">
+                         <p>${item.body}</p>
+                    </div>
+                `);
+            });
+            el.innerHTML = news;
+        })
+        .catch(e => console.error(e))
+
+
+</script>
+</body>
+</html>
